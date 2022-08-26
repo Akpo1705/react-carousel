@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+.carousel-container{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.carousel{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: calc(var(--index)* var(--side-big));
+    height: calc(var(--index)* var(--side-small));
+}
+
+.carousel--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(var(--index)* var(--side-small));
+    background-size: cover;
+  }
+  
+.carousel--feature {
+    text-align: center;
+}
+
+.carousel__btn-right,
+.carousel__btn-left {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: calc(var(--index) * .8);
+  color: #eee;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.carousel__btn {
+  background: #fff;
+  text-transform: uppercase;
+  border: none;
+  color: #444;
+  border: 1px solid #444;
+  outline: none;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+
+.carousel__btn-left:hover,
+.carousel__btn-right:hover {
+  transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    animation: fadeIn 0.5s;
+  }
+
+
+.feature--title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .feature--text {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+  }
